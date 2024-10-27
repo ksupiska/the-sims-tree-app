@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "The-Sims-Sans-Bold-SC";
+  src: url("c:\Users\kspiska\Downloads\The_Sims_Sans-Bold-SC.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Центрирует текст */
+  text-align: center; /* Центрирование текста */
+  width: 100%; /* Опционально, чтобы текст занимал всю ширину */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Начальное положение текста */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Конечное положение текста */
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards; /* Длительность и тип анимации */
+}
+
+.text-center2 {
+    display: flex; /* Используем Flexbox */
+    flex-direction: column; /* Элементы располагаются вертикально */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    text-align: center; /* Центрируем текст */
+    margin: 20px; /* Отступы вокруг блока */
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам обтекать */
+    justify-content: center; /* Центрирование по горизонтали */
+    margin: 20px 0; /* Отступы между рядами */
+}
+
+.text-item {
+    flex: 1 1 30%; /* Ширина блока 30% с возможностью растяжения */
+    max-width: 30%; /* Максимальная ширина блока */
+    box-sizing: border-box; /* Учет отступов и границ в ширину */
+    padding: 10px; /* Отступ внутри блока */
+}
+
+@media (max-width: 768px) {
+    .text-center2 {
+        flex: 1 1 100%; /* На мобильных устройствах элементы занимают 100% ширины */
+        max-width: 100%; /* Максимальная ширина блока */
+    }
+}

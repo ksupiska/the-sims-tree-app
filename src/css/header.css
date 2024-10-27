@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "The-Sims-Sans-Bold-SC";
+  src: url("c:\Users\kspiska\Downloads\The_Sims_Sans-Bold-SC.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom-button {
+  background-color: #259400; /* Основной цвет */
+  border: none;
+  border-radius: 10px;
+  color: black; /* Текст/иконка белого цвета */
+  transition: background-color 0.3s, color 0.3s; /* Плавный переход при наведении */
+}
+
+.custom-button:hover {
+  color: white;
+  background-color: #1f7d00; /* Более темный цвет при наведении */
+}
+
+.registration-icon {
+  filter: invert(1); /* Чёрный цвет по умолчанию */
+  transition: filter 0.3s;
+}
+
+.btn:hover .registration-icon,
+.btn:focus .registration-icon {
+  filter: invert(0); /* Белый цвет при наведении/нажатии */
+}

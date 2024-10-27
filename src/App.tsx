@@ -1,9 +1,12 @@
 import React from 'react';
+import Header from './components/Header';
+import MainPage from './components/MainPage'
 
 const App: React.FC = () => {
   return (
     <div>
-      <h1>Добро пожаловать в Древо Династий!</h1>
+      <Header />
+      <MainPage />
     </div>
   );
 };
